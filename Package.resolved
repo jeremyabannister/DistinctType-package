@@ -1,0 +1,87 @@
+{
+  "originHash" : "3c20ccb959db2bd9eece9b15342187cc6d6d3ff868e5e9cbc19fead581078633",
+  "pins" : [
+    {
+      "identity" : "assertiontoolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/AssertionToolkit",
+      "state" : {
+        "revision" : "f566c1fbaf5567c8005bfa0b734357900b455e84",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "data-humanreadabledescription",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/Data-humanReadableDescription",
+      "state" : {
+        "revision" : "392a2f0aa4fc3742c830c2c3dbdb14de499f72c5",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "data-utf8string",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/Data-utf8String",
+      "state" : {
+        "revision" : "31e935570c8926bb4b21981cccf388e78968c4a3",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "errormessage-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/ErrorMessage-package",
+      "state" : {
+        "revision" : "317e7dbba44dc6e28a4a169975d95e1a5ed5911b",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "expressionergonomics",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/ExpressionErgonomics",
+      "state" : {
+        "revision" : "1886e6e82efdc5e6b266428e92cdd60f501f4cdd",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "jsontoolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/JSONToolkit",
+      "state" : {
+        "revision" : "21fd75b3f8c22139fbb6f2bd5062791ecec94fbb",
+        "version" : "0.2.0"
+      }
+    },
+    {
+      "identity" : "randomlygeneratable-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/RandomlyGeneratable-package",
+      "state" : {
+        "revision" : "c8cdcf96f0175ea4f1b7214b758981267229c479",
+        "version" : "0.1.0"
+      }
+    },
+    {
+      "identity" : "string-utf8data",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/String-utf8Data",
+      "state" : {
+        "revision" : "d01f5e203709814f3ed2170408eea54c06af17bc",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "xctesttoolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jeremyabannister/XCTestToolkit",
+      "state" : {
+        "revision" : "da14ae755f67262ae27d863b41a6ac9514f4db98",
+        "version" : "0.2.4"
+      }
+    }
+  ],
+  "version" : 3
+}

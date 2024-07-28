@@ -1,23 +1,59 @@
 // swift-tools-version: 5.10
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
+///
 import PackageDescription
 
+
+///
 let package = Package(
     name: "DistinctType-package",
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "DistinctType-package",
-            targets: ["DistinctType-package"]),
+            name: "DistinctType-module",
+            targets: ["DistinctType-module"]
+        ),
+    ],
+    dependencies: [
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/ExpressionErgonomics",
+            "0.4.0" ..< "0.5.0"
+        ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/JSONToolkit",
+            "0.2.0" ..< "0.3.0"
+        ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/RandomlyGeneratable-package",
+            "0.1.0" ..< "0.2.0"
+        ),
+        
+        ///
+        .package(
+            url: "https://github.com/jeremyabannister/XCTestToolkit",
+            "0.2.0" ..< "0.3.0"
+        ),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "DistinctType-package"),
+            name: "DistinctType-module",
+            dependencies: [
+                "ExpressionErgonomics",
+                .product(name: "RandomlyGeneratable-module", package: "RandomlyGeneratable-package"),
+            ]
+        ),
         .testTarget(
-            name: "DistinctType-packageTests",
-            dependencies: ["DistinctType-package"]),
+            name: "DistinctType-tests",
+            dependencies: [
+                "DistinctType-module",
+                "JSONToolkit",
+                "XCTestToolkit",
+            ]
+        ),
     ]
 )
