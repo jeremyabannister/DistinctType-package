@@ -1,10 +1,7 @@
-// swift-tools-version: 5.10
+// swift-tools-version:6.0
 
-///
 import PackageDescription
 
-
-///
 let package = Package(
     name: "DistinctType-package",
     products: [
@@ -14,29 +11,21 @@ let package = Package(
         ),
     ],
     dependencies: [
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/ExpressionErgonomics",
-            "0.4.0" ..< "0.5.0"
+            .upToNextMinor(from: "0.4.6")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/JSONToolkit",
-            "0.2.0" ..< "0.3.0"
+            .upToNextMinor(from: "0.2.1")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/RandomlyGeneratable-package",
-            "0.1.0" ..< "0.2.0"
+            .upToNextMinor(from: "0.1.1")
         ),
-        
-        ///
         .package(
             url: "https://github.com/jeremyabannister/XCTestToolkit",
-            "0.2.0" ..< "0.3.0"
+            .upToNextMinor(from: "0.2.6")
         ),
     ],
     targets: [
