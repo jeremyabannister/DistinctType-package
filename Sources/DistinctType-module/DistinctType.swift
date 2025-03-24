@@ -31,3 +31,5 @@ public struct DistinctType<
         self.underlyingValue = underlyingValue
     }
 }
+
+extension DistinctType: Sendable where UnderlyingType: Sendable { }
